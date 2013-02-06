@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Carmel Cubing - Contact Us</title>
+		<meta name="author" content="Michael Rose" />
+		<meta name="revised" content="2012/01/14" />
+		<meta name="description" content="The Official Website of the OLMC Rubik's Cube Club">
+		<meta name="keywords" content="Carmel Cubing, Rubik's cube, cubing, OLMC, Our Lady of Mount Carmel, 
+			WCA, World Cube Association, Type A, Dayan, Lingyun, Lanlan, 2x2, 3x3, 2x2x2, 3x3x3">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="cubing.css" />
+		<script type="text/javascript" src="cubing.js"></script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript"> 
+			$(document).ready(function(){
+				$(".answer").hide();
+				$("#hide").click(function(){
+					$("#faqs").slideToggle("slow");
+					$(".answer").hide("slow");
+				});
+				$(".question").click(function(){
+					var qnum = $(this).attr("id").substring(1);
+					var ans = "#a" + qnum;
+					$(ans).slideToggle("slow");
+					for (var i = 1; i <= $(".faq").get().length; i++) {
+						ans = "#a" + i;
+						if (i != parseInt(qnum)) {
+							$(ans).hide("slow");
+						}
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">setTitle("Contact Us");</script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="titles">
+				<h1>Carmel Cubing</h1>
+				<h2 id="title">Contact Us</h2>
+			</div>
+			<div class="menu">
+				<script type="text/javascript">drawHeaderMenu();</script>
+			</div>
+		</div>
+		<div class="left">
+			<h3>FAQs</h3>
+			<h4>Click on a question to view the answer.</h4>
+			<h5 id="hide">Hide/Show</h5>
+			<div id="faqs">
+				<div class="faq">
+					<div class="question" id="q1">
+						<span>Q</span><p>I have joined the OLMC Rubik's Cube Club, and now everywhere I go I just can't seem to keep the 
+						ladies away from me! What do I do?</p>
+					</div>
+					<div class="answer" id="a1">
+						<span>A</span><p>Getting all the ladies is a cross that all male members of the club must bear. 
+						The best remedy is to teach them how to cube! It gets their hands onto something other than you for a while.</p>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question" id="q2">
+						<span>Q</span><p>Are there any ladies actually in the club?</p>
+					</div>
+					<div class="answer" id="a2">
+						<span>A</span><p>Yes, we have several avid cubers of the fairer sex.</p>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question" id="q3">
+						<span>Q</span><p>Do they get all the guys wherever they go?</p>
+					</div>
+					<div class="answer" id="a3">
+						<span>A</span><p>Duh.</p>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question" id="q4">
+						<span>Q</span><p>Does the club provide me with my own cube?</p>
+					</div>
+					<div class="answer" id="a4">
+						<span>A</span><p>You will not be provided with a personal cube, but there are extra cubes for members
+						who do not own one. There are usually a variety of cubes for sale as well.</p>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question" id="q5">
+						<span>Q</span><p>Are there really snacks?</p>
+					</div>
+					<div class="answer" id="a5">
+						<span>A</span><p>Of course. Feel free to contribute to the fun yourself by bringing in food to share.</p>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question" id="q6">
+						<span>Q</span><p>Do I have to be Asian to be a good cuber?</p>
+					</div>
+					<div class="answer" id="a6">
+						<span>A</span><p>No, although there is significant evidence to suggest it would help. However, the arguably top
+						cuber in the world, <a href="http://worldcubeassociation.org/results/p.php?i=2009ZEMD01" target="_blank">Feliks Zemdegs</a>, 
+						is Australian, so it seems that there is hope for caucasians.</p>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question" id="q7">
+						<span>Q</span><p>I think I may be addicted to cubing. I can't seem to stop and it's distracting me from my everyday work. 
+						I cube so much, it may actually be a little off putting. What should I do?</p>
+					</div>
+					<div class="answer" id="a7">
+						<span>A</span><p>How to tell if you're a cubing addict: 1. Anything you look at other than a puzzle is blurry. 2. You
+						have trouble focusing on anything in the distance. 3. You realize you've been cubing for 6+ hours and forgot to eat or drink. 
+						If you meet all of these criteria, there is no hope. You will probably die with a cube in your hand in the next month. 
+						Can I have your swarm of ladies?</p>
+					</div>
+				</div>
+				<div class="faq">
+					<div class="question" id="q8">
+						<span>Q</span><p>I hear that there are hot Cuban boys at the club. Is this true?</p>
+					</div>
+					<div class="answer" id="a8">
+						<span>A</span><p>I hate to disappoint, but none of the hot CUBING boys in the club happen to actually be
+						Cuban.</p>
+					</div>
+				</div>
+			</div>
+			<h4>Ask a question!</h4>
+			<form name="frmQuestion" action="MAILTO:questions@carmelcubing.heliohost.org" target="_blank" method="post" enctype="text/plain" onsubmit="return validateQuestion()">
+				<input type="text" name="Name" value="Name" maxlength="20" /><br />
+				<input type="text" name="Email" value="Email" maxlength="50" /><br />
+				<textarea name="Question" maxlength="200">Question</textarea>
+				<input type="submit" value="Send" class="button" />
+				<input type="reset" value="Reset" class="button" />
+			</form>
+		</div>
+		<div class="content">
+			<h3>Contact Information</h3>
+			<p>If you have any questions at all about the OLMC Rubik's Cube Club, please do not hesitate to contact 
+			<a href="#contact_msr">Michael Rose</a>. Any comments or queries about the club, this website, or anything about cubing in
+			general are welcome!</p>
+			<p>Looking to join the OLMC Rubik's Cube Club? Or just want to pay us a visit? Then come on down to 
+			<a href="#contact_olmc">Our Lady of Mount Carmel Secondary School</a> and cube with us! Meeting details can be found on the
+			<a href="info.htm#meetinginfo">information</a> page.</p>
+			<div class="contact">
+				<h4 id="contact_msr">Michael Rose</h4>
+				<ul>
+					<li>Email: <a href="mailto:michael.rose@carmelcubing.heliohost.org" target="_blank">michael.rose@carmelcubing.heliohost.org</a></li>
+					<li>Cell: <a href="mailto:4167794238@txt.bell.ca" target="_blank">(416) 779-4238</a></li>
+				</ul>
+			</div>
+			<div class="contact">
+				<h4 id="contact_olmc">Our Lady of Mount Carmel Catholic Secondary School</h4>
+				<address>3700 Trelawney Circle<br />
+				Mississauga, ON<br />
+				Canada<br />
+				L5N 5J7</address>
+				<ul>
+					<li>Phone: (905) 824-1025</li>
+					<li>Fax: (905) 824-4549</li>
+					<li>Website: <a href="http://www.dpcdsb.org/CARMS" target="_blank">http://www.dpcdsb.org/CARMS</a></li>
+				</ul>
+				<img src="olmcbanner.jpg" alt="OLMC" />
+			</div>
+		</div>
+		<div class="right">
+			<script type="text/javascript">drawRight();</script>
+		</div>
+		<div class="footer">
+			<div class="menu">
+				<script type="text/javascript">drawFooterMenu();</script>
+			</div>
+			<p id="copyright">&copy; 2012 Michael Rose</p>
+		</div>
+	</body>
+</html>

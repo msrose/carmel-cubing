@@ -1,0 +1,573 @@
+body {
+	margin-left:auto;
+	margin-right:auto;
+	font-size:100%;
+	width:62.875em;
+	font-family:verdana;
+}
+
+.left, .content, .right {
+	margin:0.3125em 0em 0.3125em;
+}
+
+.left, .content{
+	float:left;
+}
+
+.left, .right {
+	width:12em;
+}
+
+.left {
+	clear:left;
+	padding-right:0.5em;
+	text-align:center;
+}
+
+.content {
+	width:35.5em;
+	margin-left:auto;
+	margin-right:auto;	
+	padding-left:1em;
+	padding-right:1em;
+	border-left:0.125em dashed black;
+	border-right:0.125em dashed black;
+}
+
+.right {
+	float:right;
+	padding-left:0.5em;
+	text-align:center;
+}
+
+.header, .footer {
+	clear:both;
+	text-align:center;
+}
+
+.header {
+	background-image:url('Rubiks_cube.jpg');
+}
+
+.titles {
+	background-color:lightgoldenrodyellow;
+	border:1px dotted red;
+	width:31em;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+}
+
+.footer p {
+	clear:both;
+	font-family:courier;
+	border:1px dashed green;
+	color:purple;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1em;
+	width:15em;
+}
+
+.menu ul {
+	list-style-type:none;
+}
+
+.menu li {
+	float:left;
+}
+
+.menu {
+	margin-left:auto;
+	margin-right:auto;
+	width:62.875em;
+	overflow:hidden;
+}
+
+.header .menu {
+	background-color:white;
+}
+
+.menu a {
+	display:block;
+	width:9em;
+	padding:0.1875em;
+	font-family:courier;
+}
+
+.menu a:link, .menu a:visited {
+	text-decoration:none;
+	border:0.1875em outset #E8E8E8;
+	font-weight:bold;
+}
+
+#home:hover, #info:hover, #links:hover, #merch:hover, #contact:hover, #results:hover {
+	border:0.1875em inset darkgray;
+	background-color:lightgray;
+	color:magenta;
+}
+
+#home {
+	background-color:red;
+	color:white;
+}
+
+#info {
+	background-color:green;
+	color:white;
+}
+
+#links {
+	background-color:orange;
+	color:black;
+}
+
+#merch {
+	background-color:blue;
+	color:white;
+}
+
+#contact {
+	background-color:yellow;
+	color:black;
+}
+
+#results {
+	background-color:#F0F0F0;
+	color:black;
+}
+
+h1, h2 {
+	padding:0;
+	margin:8px 0px 8px;
+}
+
+h1 {
+	font-size:3em;
+}
+
+h2 {
+	font-size:2.5em;
+	font-family:courier;
+}
+
+h3, h4 {
+	text-align:center;
+}
+
+#contact_msr, #contact_olmc {
+	text-align:left;
+	margin-bottom:0.5em;
+}
+
+h5 {
+	font-size:1em;
+	margin:0.5em;
+	clear:right;
+}
+
+.content p {
+	text-indent:2em;
+	line-height:1.5em;	
+}
+
+.content fieldset {
+	margin-bottom:2em;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+
+.content legend {
+	font-size:0.75em;
+}
+
+.content a, .right a, .members a[href], .merch_step a, .faq a, ul.links a, ul.events a {
+	text-decoration:none;
+	color:red;
+}
+
+.content a:hover, .right a:hover, .members a[href]:hover, .merch_step a:hover, .faq a:hover, ul.links a:hover, ul.links a[href^="#"]:hover, ul.events a:hover{
+	text-decoration:underline;
+	color:magenta;
+}
+
+a.wca_cubers {
+	text-decoration:none;
+	font-size:1.5em;
+	display:block;
+	margin-top:1em;
+	font-family:courier;
+	color:purple;
+	border:1px dashed green;
+	font-weight:bold;
+}
+
+a:hover.wca_cubers {
+	color:gold;
+	background-color:black;
+	border:1px outset gold;
+	font-weight:bold;
+}
+
+.right img {
+	height:11em;
+	width:11em;
+	margin-top:1em;
+}
+
+.right .button {
+	font-size:1.5em;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+img.wca_cubers {
+	height:9em;
+	width:9em;
+	margin-top:2em;
+}
+
+.content ul, .left ul {
+	list-style: square url("favicon.ico");
+}
+
+ul.contents {
+	border:1px dotted black;
+	padding:1em;
+	padding-left:2em;
+	margin-left:auto;
+	margin-right:auto;
+	width:12em;
+}
+
+.members li {
+	margin-top:1em;
+	font-family:"Comic Sans MS";
+}
+
+.back_to_top {
+	float:right;
+}
+
+div.contact {
+	margin:1em;
+	border:1px dotted red;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+
+div.contact li {
+	margin-bottom:0.5em;
+}
+
+.faq, .merch_step {
+	text-align:justify;
+	border-bottom:1px dotted black;
+	margin-right:0.5em;
+	margin-left:0;
+	padding-bottom:0.75em;
+	margin-bottom:0.75em;
+}
+
+.faq span, .merch_step span {
+	font-size:2.5em;
+	float:left;
+	font-family:courier;
+	border:1px dotted red;
+	padding-left:0.2em;
+	padding-right:0.2em;
+	margin-right:0.2em;
+	font-weight:bold;
+	clear:both;
+}
+
+.faq .question {
+	margin-bottom:0.5em;
+}
+
+.faq .question, .faq .answer, .merch_step {
+	overflow:hidden;
+}
+
+.faq p, .merch_step p {
+	font-size:0.75em;
+	margin:0;
+}
+
+.faq .question p {
+	font-weight:bold;
+}
+
+.faq .answer p {
+	font-style:italic;
+}
+
+.merch  img {
+	float:left;
+	margin-right:1.5em;
+	width:18em;
+	height:18em;
+}
+
+.item {
+	clear:both;
+	margin-left:0.5em;
+	margin-right:0.5em;
+	border:1px dotted red;
+	margin-top:1em;
+	overflow:hidden;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+
+.item h4, .link h4 {
+	text-align:left;
+}
+
+.item span {
+	font-weight:bold;
+	display:inline;
+}
+
+.item span[id] {
+	color:red;
+}
+
+.item li {
+	margin-bottom:0.5em;
+}
+
+.item .add {
+	float:right;
+	margin-top:1.5em;
+}
+
+#hide, #show {
+	font-size:0.75em;
+	font-family:courier;
+	border:1px dotted red;
+	margin-bottom:-1px;
+	margin-right:0.5em;
+	margin-left:0;
+}
+
+.all {
+	overflow:hidden;
+	margin-bottom:1em;
+	text-align:center;
+}
+
+.all h4 {
+	display:inline;
+	font-size:0.825em;
+}
+
+.all #hide  {
+	display:inline;
+	float:left;
+	margin:auto;
+}
+
+.all #show {
+	display:inline;
+	float:right;
+	margin:auto;
+}
+
+#step1, #q1 {
+	border-top:1px solid white;
+}
+
+.cart, .registration {
+	margin-left:0.5em;
+	margin-right:0.5em;
+}
+
+.cart .text , .registration .text{
+	float:left;
+	width:50%;
+}
+
+.cart .text input, .registration .text input {
+	width:95%;
+	font-size:1.1em;
+}
+
+.cart .order, .registration .events {
+	float:right;
+	width:50%;
+	text-align:center;
+}
+
+p.instr {
+	font-size:0.75em;
+	text-indent:0;
+	text-align:center;
+}
+
+.cart .order, .cart .text, .registration .events, .registration .text{
+	padding-bottom:0.5em;
+}
+
+.left .events li {
+	padding-bottom:1em;
+}
+
+.cart .order textarea {
+	max-width:95%;
+	min-width:95%;
+	max-height:4em;
+	min-height:4em;
+}
+
+.cart .buttons, .registration .buttons {
+	width:100%;
+	text-align:center;
+	clear:both;
+	margin-top:0.5em;
+	border-top:1px dashed black;
+	padding-top:0.5em;
+}
+
+.cart .buttons input, .registration .buttons input {
+	width:7em;
+	font-size:1.1em;
+}
+
+.contact img {
+	width:100%;
+}
+
+form {
+	border:1px dotted red;
+	padding:0.25em;
+	overflow:hidden;
+}
+
+.left form input {
+	font-family:"Comic Sans MS";
+}
+
+.left form input[type="text"] {
+	width:13em;
+}
+
+.left form textarea {
+	max-width:13em;
+	min-width:13em;
+	max-height:5em;
+	min-height:5em;
+}
+
+.members img {
+	max-width:10em;
+	height:8em;
+	border:2px dashed purple;
+}
+
+.link {
+	border:1px dotted red;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	margin-bottom:1em;
+}
+
+.link li {
+	margin-bottom:0.5em;
+}
+
+.link_list {
+	text-align:left;
+}
+
+.link_list ul {
+	margin-left:0;
+	text-indent:0;
+	padding-left:1em;
+	
+}
+
+ul.links {
+	list-style:none;
+	list-style-position:inside;
+}
+
+ul.links ul.inner {
+	font-size:0.8em;
+	margin-top:0.5em;
+	padding-bottom:0.5em;
+}
+
+ul.links ul.inner li {
+	border:none;
+}
+
+ul.links li {
+	margin-bottom:0.75em;
+	border-bottom:1px dotted black;
+}
+
+ul.links a[href^="#"] {
+	color:black;
+}
+
+.results h5 {
+	text-align:center;
+}
+
+.results {
+	border-bottom:1px dotted red;
+}
+
+.results table {
+	width:100%;
+	font-size:0.75em;
+	border-collapse:collapse;
+	margin-bottom:2em;
+}
+
+.results caption {
+	font-size:1.5em;
+	text-align:left;
+	margin-bottom:0.5em;
+}
+
+.results th {
+	text-align:left;
+	background-color:#F0F0F0;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+
+.results th, .results td {
+	padding-right:0.4em;
+	padding-left:0.4em;
+}
+
+.results th.best, .results th.average {
+	text-align:right;
+}
+
+.results td {
+	padding-bottom:1em;
+	padding-top:1em;
+}
+
+.results td.best, .results td.average, .results td.place {
+	font-weight:bold;
+	text-align:right;
+}
+
+.results td.details {
+	font-size:0.9em;
+}
+
+.results tr.alt {
+	background-color:#F0F0F0;
+}
+
+.quicklink {
+	border:0.5em outset red;
+	font-weight:bold;
+	padding:0.5em;
+}

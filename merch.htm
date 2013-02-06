@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Carmel Cubing - Merchandise</title>
+		<meta name="author" content="Michael Rose" />
+		<meta name="revised" content="2012/01/14" />
+		<meta name="description" content="The Official Website of the OLMC Rubik's Cube Club">
+		<meta name="keywords" content="Carmel Cubing, Rubik's cube, cubing, OLMC, Our Lady of Mount Carmel, 
+			WCA, World Cube Association, Type A, Dayan, Lingyun, Lanlan, 2x2, 3x3, 2x2x2, 3x3x3">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="cubing.css" />
+		<script type="text/javascript" src="cubing.js"></script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript"> 
+			$(document).ready(function(){
+				$("#hide").click(function(){
+					$("#steps").slideToggle("slow");
+				});
+				var itemTot, itemVal, current, itemId, itemCheck;
+				$(".item input").click(function(){
+					$("#order").html("");
+					itemTot = $(".item input").get().length;
+					for (var i = 1; i <= itemTot; i++) {
+						itemCheck = "#chk" + i;
+						if ($(itemCheck).is(':checked')) {
+							itemId = "#" + $(itemCheck).attr("value");
+							itemVal = $(itemId).html();
+							current = $("#order").html();
+							if (current != null && current != "") current += ", ";
+							$("#order").html(current + itemVal);
+						}
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">setTitle("Merchandise");</script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="titles">
+				<h1>Carmel Cubing</h1>
+				<h2 id="title">Merchandise</h2>
+			</div>
+			<div class="menu">
+				<script type="text/javascript">drawHeaderMenu();</script>
+			</div>
+		</div>
+		<div class="left">
+			<h3>How to Order</h3>
+			<h4>Follow these easy steps to reserve a cube for purchase.</h4>
+			<h5 id="hide">Hide/Show</h5>
+			<div id="steps">
+				<div class="merch_step" id="step1">
+					<span>1</span><p>Fill out the fields marked "Name" and "Email" in the Your Cart section appropriately.</p>
+				</div>
+				<div class="merch_step" id="step2">
+					<span>2</span><p>Go through the available items and select the ones you wish to purchase by checking the
+					boxes marked "Add to Cart" in the top right corner of each item section.</p>
+				</div>
+				<div class="merch_step" id="step3">
+					<span>3</span><p>Ensure that all the information found in the Your Cart section is accurate, and press order.</p>
+				</div>
+				<div class="merch_step" id="step4">
+					<span>4</span><p>Your default mail program will be opened with an email addressed to Michael Rose. It will contain all 
+					the information from your order. Send the email with the subject "Cube Order".</p>
+				</div>
+				<div class="merch_step" id="step5">
+					<span>5</span><p>You will be contacted within 48 hours about the final price of your order and when and where you can
+					meet Michael to pick it up.</p>
+				</div>
+				<div class="merch_step" id="step6">
+					<span>6</span><p>According to the instructions in the email, bring your money to the meeting with Michael and you will
+					receive your merchandise.</p>
+				</div>
+				<div class="merch_step" id="step7">
+					<span>7</span><p>Please note that only members of the <a href="info.htm#howtojoin">club</a> may purchase a cube.</p>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<h3 id="merchhead">Items and Descriptions</h3>
+			<ul class="contents" id="merch_list">
+				<li><a href="#typeav3">3x3x3 Type-A V</a></li>
+				<li><a href="#lanlan2">2x2x2 LanLan</a></li>
+			</ul>
+			<h4>Your Cart</h4>
+			<form name="frmOrder" class="cart" action="MAILTO:orders@carmelcubing.heliohost.org" target="_blank" method="post" enctype="text/plain" onsubmit="return validateOrder()">
+				<div class="text">
+					<input type="text" name="Name" value="Name" maxlength="20" /><br />
+					<input type="text" name="Email" value="Email" maxlength="50" />
+				</div>
+				<div class="order">
+					<textarea name="Order" id="order" maxlength="200" readonly="true"></textarea>
+				</div>
+				<div class="buttons">
+					<input type="submit" value="Order" class="button" />
+					<input type="reset" value="Reset" class="button" />
+				</div>
+			</form>
+			<div class="merch">
+				<div class="item">
+					<div class="add"><span>Add to Cart</span><input type="checkbox" value="typeav3" id="chk1" /></div>
+					<h4 id="typeav3">Type-A V 3x3x3</h4>
+					<img src="typeav3.png" alt="Type-A V 3x3" />
+					<ul>
+						<li><span>Price:</span> $12</li>
+						<li><span>Stock:</span> <span id="stock1">5</span></li>
+						<li><span>Colour:</span> Black</li>
+						<li><span>Packaging:</span> Sealed in protective plastic covering</li>
+						<li><span>Description:</span> Brand new. An excellent starter cube, lightweight with stickers. Somewhat clicky, but seems to vary
+						from cube to cube. Fairly fast with excellent cut right out of the packaging. Adjustable core.</li>
+					</ul>
+					<script type="text/javascript">drawBackToTop("merchhead");</script>
+				</div>
+				<div class="item">
+					<div class="add"><span>Add to Cart</span><input type="checkbox" value="lanlan2" id="chk2" /></div>
+					<h4 id="lanlan2">LanLan 2x2x2</h4>
+					<img src="lanlan2.png" alt="LanLan 2x2" />
+					<ul>
+						<li><span>Price:</span> $10</li>
+						<li><span>Stock:</span> <span id="stock1">2</span></li>
+						<li><span>Colour:</span> Black</li>
+						<li><span>Packaging:</span> Sealed in a LanLan Toys box</li>
+						<li><span>Description:</span> Brand new, stickered - purple side instead of orange. 
+						The 2x2 of choice for countless cubers. Very smooth and fast with excellent cut. Adjustable
+						3-screw core. Excellent for beginners and experts alike.</li>
+					</ul>
+					<script type="text/javascript">drawBackToTop("merchhead");</script>
+				</div>
+			</div>
+			<br />
+		</div>
+		<div class="right">
+			<script type="text/javascript">drawRight();</script>
+		</div>
+		<div class="footer">
+			<div class="menu">
+				<script type="text/javascript">drawFooterMenu();</script>
+			</div>
+			<p id="copyright">&copy; 2012 Michael Rose</p>
+		</div>
+	</body>
+</html>
