@@ -1,5 +1,5 @@
 use Rack::Static,
-  urls: ['/images', '/js', '/css'],
+  urls: ['/images', '/js', '/css'] + Dir["public/*.htm"].map { |url| url.gsub("public","") },
   root: 'public'
 
 run lambda { |env|
@@ -9,6 +9,6 @@ run lambda { |env|
       'Content-Type' => 'text/html',
       'Cache-Control' => 'public, max-age=86400'
     },
-    File.open('public/merch.htm', File::RDONLY)
+    File.open('public/index.htm', File::RDONLY)
   ]
 }
