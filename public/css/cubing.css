@@ -46,7 +46,7 @@ body {
 }
 
 .header {
-	background-image:url('images/Rubiks_cube.jpg');
+	background-image:url('../images/Rubiks_cube.jpg');
 }
 
 .titles {
@@ -228,7 +228,7 @@ img.wca_cubers {
 }
 
 .content ul, .left ul {
-	list-style: square url("images/favicon.ico");
+	list-style: square url("../images/favicon.ico");
 }
 
 ul.contents {
