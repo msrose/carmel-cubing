@@ -27,7 +27,7 @@ body {
 .content {
 	width:35.5em;
 	margin-left:auto;
-	margin-right:auto;	
+	margin-right:auto;
 	padding-left:1em;
 	padding-right:1em;
 	border-left:0.125em dashed black;
@@ -46,7 +46,7 @@ body {
 }
 
 .header {
-	background-image:url('Rubiks_cube.jpg');
+	background-image:url('images/Rubiks_cube.jpg');
 }
 
 .titles {
@@ -168,7 +168,7 @@ h5 {
 
 .content p {
 	text-indent:2em;
-	line-height:1.5em;	
+	line-height:1.5em;
 }
 
 .content fieldset {
@@ -228,7 +228,7 @@ img.wca_cubers {
 }
 
 .content ul, .left ul {
-	list-style: square url("favicon.ico");
+	list-style: square url("images/favicon.ico");
 }
 
 ul.contents {
@@ -484,7 +484,7 @@ form {
 	margin-left:0;
 	text-indent:0;
 	padding-left:1em;
-	
+
 }
 
 ul.links {
