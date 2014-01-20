@@ -1,6 +1,6 @@
 # Carmel Cubing
 
-Visit the website at http://www.carmelcubing.heliohost.org.
+Visit the website at http://www.carmelcubing.herokuapp.com
 
 ## About
 
